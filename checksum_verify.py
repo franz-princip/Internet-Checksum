@@ -7,7 +7,7 @@ if len(hex(sumstuff)) > 6:
   sumstuff = int(manip[2],16)+int(manip[3:],16)
 
 print("Sum of 16bit groups is: "+ (hex(sumstuff))[2:])
-if str((hex(sumstuff))[2:])
+if str((hex(sumstuff))[2:]) == 'ffff' :
   print("No Error")
 else:
   print("Error")
