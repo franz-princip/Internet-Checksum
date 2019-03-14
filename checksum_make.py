@@ -1,4 +1,4 @@
-hexinput = '0x'+raw_input('Input hex to add checksum:')
+hexinput = '0x'+input('Input hex to add checksum:')
 hexinput = "".join(hexinput.split())
 quads = [int(hexinput[i:i+4],16) for i in range(2, len(hexinput), 4)]
 sumstuff = hex(sum(quads))
